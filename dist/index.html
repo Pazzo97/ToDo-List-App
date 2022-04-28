@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script defer src="index.bundle.js"></script></head>
+
+<body>
+
+  <main class="content">
+
+    <div class="container">
+
+      <div class="toDo-heading">
+        <h3>Today's todo</h3>
+        <i class="fa-solid fa-rotate refresh"></i>
+      </div>
+      <hr>
+
+      <div class="add-to-field" id="add-field">
+        <input type="text" name="todo" id="description" placeholder="Add todo to your list">
+      </div>
+      <hr>
+
+      <ul id="todo-list">
+
+        <!-- <li class="list-item">
+          <span> <input type="checkbox" name="checkbox">
+            <input type="text" value="Learn Javascript"> </span>
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+        </li>
+
+        <li class="list-item">
+          <span> <input type="checkbox" name="checkbox">
+            <input type="text" value="Learn Javascript"> </span>
+            <i class="fa-solid fa-ellipsis-vertical dots"></i>
+        </li> -->
+
+      </ul>
+
+      <button class="clear" type="button">Clear all completed</button>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
