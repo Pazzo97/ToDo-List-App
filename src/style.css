@@ -62,8 +62,9 @@ input {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 10px 15px;
   list-style: none;
+  border-bottom: 1px solid #ccc;
 }
 
 i.dots {
@@ -99,7 +100,7 @@ input[type=checkbox] {
   align-items: center;
 }
 
-.todo {
-  border-bottom: 1px solid #ccc;
-  padding: 7px 0;
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
 }
