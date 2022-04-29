@@ -72,11 +72,10 @@ export default class ToDoList {
 
   renderToDos() {
     return this.toDos.map((toDo) => `<li class="list-item" data-id=${toDo.index} >
-          <span> <input type="checkbox" name="checkbox" data-id=${toDo.index}>
-            <input type="text" class="todo-description" value="${toDo.description}" data-id=${toDo.index}> </span>
-            <i class="fa-solid fa-ellipsis-vertical dots" data-id=${toDo.index}></i>
+          <span> <i class="check fa ${toDo.completed ? 'fa-solid fa-check' : 'fa-regular fa-square'}"  data-id=${toDo.index}></i>
+          <input class="todo-description ${toDo.completed ? 'complete lineThrough' : ''}" value="${toDo.description}" data-id=${toDo.index} ></span>
+          <i class="fa-solid fa-ellipsis-vertical dots" data-id=${toDo.index}></i>
         </li>
-    `)
-      .join('');
+    `).join('');
   }
 }

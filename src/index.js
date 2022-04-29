@@ -1,6 +1,7 @@
 import './style.css';
 import ToDoList from './modules/todo-list.js';
 import { addToList, updateDescription, removeFromList } from './crud.js';
+import { removeCompletedFromList, updateCompleted } from './interactions.js';
 
 const todoList = new ToDoList();
 
@@ -48,6 +49,17 @@ const listenForEventsOnInputs = () => {
 document.addEventListener('click', (event) => {
   if (event.target.classList.contains('dots')) {
     removeFromList(todoList, event.target.dataset.id);
+    displayTodos.innerHTML = todoList.renderToDos();
+    listenForEventsOnInputs();
+  }
+  if (event.target.classList.contains('check')) {
+    updateCompleted(todoList, event.target.dataset.id);
+    displayTodos.innerHTML = todoList.renderToDos();
+    listenForEventsOnInputs();
+  }
+
+  if (event.target.classList.contains('btn')) {
+    removeCompletedFromList(todoList);
     displayTodos.innerHTML = todoList.renderToDos();
     listenForEventsOnInputs();
   }
