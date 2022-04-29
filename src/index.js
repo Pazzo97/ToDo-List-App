@@ -22,7 +22,6 @@ form.addEventListener('keypress', (e) => {
 
 const listenForEventsOnInputs = () => {
   const inputs = document.querySelectorAll('.todo-description');
-  console.log(inputs.length);
 
   if (inputs) {
     inputs.forEach((input) => {
@@ -47,7 +46,6 @@ const listenForEventsOnInputs = () => {
 };
 
 document.addEventListener('click', (event) => {
-  console.log(event.target);
   if (event.target.classList.contains('dots')) {
     removeFromList(todoList, event.target.dataset.id);
     displayTodos.innerHTML = todoList.renderToDos();
