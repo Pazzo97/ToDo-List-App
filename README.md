@@ -9,7 +9,7 @@
 - Javascript
 - ES6
 
-##Link to online version
+## Link to online version
 
 - Copy these to your browser
     ```sh
