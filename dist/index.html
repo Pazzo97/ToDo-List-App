@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ToDo</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,20 +18,20 @@
     <div class="container">
 
       <div class="toDo-heading">
-        <h3>Today's todo</h3>
+        <h3>Today's To Do</h3>
         <i class="fa-solid fa-rotate refresh"></i>
       </div>
-      <hr>
+      
 
-      <div class="add-to-field" id="add-field">
+      <form action="#" class="add-to-field">
         <input type="text" name="todo" id="description" placeholder="Add todo to your list">
-      </div>
-      <hr>
+        <i class="fa-solid fa-left-long enter"></i>
+      </form>
+  
 
-      <ul id="todo-list">
-      </ul>
+      <ul id="todo-list"></ul>
 
-      <button class="clear" type="button">Clear all completed</button>
+      <button class="btn clear" type="button">Clear all completed</button>
     </div>
 
   </main>
