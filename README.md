@@ -9,11 +9,16 @@
 - Javascript
 - ES6
 
+##Link to online version
+
+- Copy these to your browser
+    ```sh
+    https://pazzo97.github.io/ToDo-List-App/
+
 
 ## Getting Started
 
 To get a copyof this project you can follow these simple steps.
-
 
 - run npm install
 
@@ -26,6 +31,8 @@ To get a copyof this project you can follow these simple steps.
 - then
     ```sh
      cd ToDo-List-App
+     
+
 
 - open with vs code and run with live server.
 - Install NPM packages
