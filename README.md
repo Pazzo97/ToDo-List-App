@@ -19,13 +19,13 @@ To get a copyof this project you can follow these simple steps.
 
 ### Installation
 
-- Copy these.
-      ```sh
-   git clone https://github.com/Pazzo97/ToDo-List-App.git
-
+- Copy these
+    ```sh
+     git clone https://github.com/Pazzo97/ToDo-List-App.git
+   
 - then
     ```sh
-    - cd ToDo-List-App
+     cd ToDo-List-App
 
 - open with vs code and run with live server.
 - Install NPM packages
