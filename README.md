@@ -39,10 +39,16 @@ To get a copyof this project you can follow these simple steps.
 
 ## Author
 
-👤 **Author**
+👤 **Author 1**
 
 - GitHub: [@Pazzo97](https://github.com/Pazzo97)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/patrick-mukunzi-8389861a9/)
+
+👤 **Author 2**
+
+- GitHub: [@leonard33](https://github.com/leonard33)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/leonardkombo)
+
 
 ## 🤝 Contributing
 
