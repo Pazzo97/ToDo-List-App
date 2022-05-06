@@ -42,7 +42,7 @@ To get a copyof this project you can follow these simple steps.
 
 - Run
    ```sh
- npm install
+  npm test
 
 ## Author
 
