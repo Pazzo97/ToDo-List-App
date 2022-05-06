@@ -37,6 +37,13 @@ To get a copyof this project you can follow these simple steps.
    ```sh
   npm install
 
+
+### Testing
+
+- Run
+   ```sh
+ npm install
+
 ## Author
 
 👤 **Author 1**
