@@ -1,7 +1,6 @@
 /**
  * @jest-environment jsdom
  */
-
 import ToDoList from './src/modules/todo-list.js';
 
 describe('ToDoList', () => {
@@ -12,15 +11,15 @@ describe('ToDoList', () => {
     localStorage.clear();
   });
 
-  it('should add a new todo to the list', () => {
+  it('should add a new task to the list', () => {
     toDoList.addToDo('test');
     document.querySelector('#todo-list').innerHTML = toDoList.renderToDos();
-    const list = document.querySelectorAll('#todolist .list-item');
+    const list = document.querySelectorAll('#todo-list .list-item');
     expect(list)
-      .toHaveLength(0);
+      .toHaveLength(1);
   });
 
-  it('should remove a todo from the list', () => {
+  it('should remove a task from the list', () => {
     toDoList.addToDo('test');
     toDoList.addToDo('test2');
     toDoList.removeToDo(1);
