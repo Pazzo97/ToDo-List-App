@@ -1,6 +1,6 @@
 /**
  * @jest-environment jsdom
-*/
+ */
 
 import ToDoList from './src/modules/todo-list.js';
 
@@ -15,7 +15,7 @@ describe('ToDoList', () => {
   it('should add a new todo to the list', () => {
     toDoList.addToDo('test');
     document.querySelector('#todo-list').innerHTML = toDoList.renderToDos();
-    const list = document.querySelectorAll('#todo-list #list-item');
+    const list = document.querySelectorAll('#todolist .list-item');
     expect(list)
       .toHaveLength(0);
   });
@@ -23,10 +23,10 @@ describe('ToDoList', () => {
   it('should remove a todo from the list', () => {
     toDoList.addToDo('test');
     toDoList.addToDo('test2');
-    toDoList.removeToDo(0);
+    toDoList.removeToDo(1);
     document.querySelector('#todo-list').innerHTML = toDoList.renderToDos();
-    const list = document.querySelectorAll('#todo-list #list-item');
+    const list = document.querySelectorAll('#todo-list .list-item');
     expect(list)
-      .toHaveLength(0);
+      .toHaveLength(1);
   });
 });
