@@ -1,6 +1,6 @@
 # ToDo-List-App
 
-> This project is about an app of ToDo ist that show you the list of your tasks, you can add, edit and delete them.
+> This project is about an app of ToDo list that show you the list of your tasks, you can add a task, edit a task and delete them. It also has a feature where you check the completed tasks and delete them at once without going through each one of them.
 
 ## Built With:
 
